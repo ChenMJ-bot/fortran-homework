@@ -1,0 +1,20 @@
+題目三：Git 版本控制與逐行註解驗證
+
+版本紀錄（git log --oneline）：
+392f285 v2: add line-by-line comments
+ebfaf20 v1: original sum 1 to N program
+
+版本 1 編譯：gfortran -Wall -Wextra -fcheck=all sum.f90 -o sum_v1：成功
+版本 1 測試：
+Please enter N: Sum of 1 to 10 = 55
+
+版本 2 編譯：gfortran -Wall -Wextra -fcheck=all sum.f90 -o sum_v2：成功
+版本 2 測試（N=10）：
+Please enter N: Sum of 1 to 10 = 55
+版本 2 測試（N=100）：
+Please enter N: Sum of 1 to 100 = 5050
+
+Git 狀態：
+認錄詳情：
+392f285 v2: add line-by-line comments
+ebfaf20 v1: original sum 1 to N program
